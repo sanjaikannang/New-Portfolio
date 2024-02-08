@@ -1,12 +1,10 @@
 import React from "react";
 import { techStack, contactLinks } from "../constants";
-import Navbar from "./Navbar";
 import certificateImage from "../assets/stack overflow/GuviCertification - 3i2C6794399e8B315t (3).png";
 
 const About = () => {
   return (
     <>
-      <Navbar />
       <div
         id="about"
         className="bg-gradient-to-t from-blue-200 to-white min-h-screen py-12 flex items-center justify-center"
@@ -21,28 +19,42 @@ const About = () => {
               A bit about me
             </h4>
             <p>
-              I am an enthusiastic Full Stack Developer with a strong foundation
-              in web development and problem-solving. I am adept at learning new
-              technologies quickly and committed to continuous self-improvement.
-              I am eager to contribute my technical skills and passion for
-              coding to a dynamic development team.
+              A self-motivated, adaptable individual with a passion for
+              continuous learning. I am eager to contribute my technical skills
+              and passion for coding to a dynamic development team.
             </p>
           </div>
 
-          <div className="mb-8">
-            <h4 className="text-3xl font-semibold text-blue-600 mb-4">
-              Education
-            </h4>
-            <p className="text-xl text-gray-700">
-              Bachelor of Science - Information Technology
-            </p>
-            <h5 className="text-xl text-gray-800">
-              PSG College Of Arts & Science, Bharathiar University
-            </h5>
-            <p className="text-xl text-gray-700">
-              Passed Out Year: 2023 | CGPA: 7.4
-            </p>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row">
+            <div className="mb-8 md:mr-8">
+              <h4 className="text-3xl font-semibold text-blue-600 mb-4">
+                Education
+              </h4>
+              <p className="text-xl text-gray-700">
+                Bachelor of Science - Information Technology
+              </p>
+              <h5 className="text-xl text-gray-800">
+                PSG College Of Arts & Science, Bharathiar University
+              </h5>
+              <p className="text-xl text-gray-700">
+                Passed Out Year: 2023 | CGPA: 7.4
+              </p>
+            </div>
+
+            <div className="mb-8">
+              <div className="md:ml-8">
+                <h4 className="text-3xl font-semibold text-blue-600 mb-4">
+                  Certification
+                </h4>
+                <p className="text-xl text-gray-700">
+                  Full Stack Developer - MERN
+                </p>
+                <h5 className="text-xl text-gray-800">Guvi, IITM - Chennai</h5>
+                <p className="text-xl text-gray-700">June 2023 – August 2023</p>
+              </div>
+            </div>
           </div>
+
           <br />
           <div className="mb-8">
             <div>
@@ -118,22 +130,6 @@ const About = () => {
             </div>
           </div>
           <br />
-          <div className="mb-8">
-            <h4 className="text-3xl font-semibold text-blue-600 mb-4">
-              Certification
-            </h4>
-            <br />
-            <p className="text-xl text-gray-700 mb-4">
-              I have completed the "Zen Class Full Stack Developer Program" at
-              GUVI Geek Networks, IITM Research Park.
-            </p>
-            <br />
-            <img
-              src={certificateImage}
-              alt="Guvi Certification"
-              className="mx-auto mb-4"
-            />
-          </div>
         </div>
       </div>
     </>

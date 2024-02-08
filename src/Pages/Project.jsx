@@ -1,128 +1,402 @@
 import React from "react";
-import Navbar from "./Navbar";
-import stackOverflowImage1 from "../assets/stack overflow/youtube1.png";
-import stackOverflowImage2 from "../assets/stack overflow/youtube2.png";
-import stackOverflowImage3 from "../assets/stack overflow/youtube3.png";
-import Slider from "react-slick";
-
-// Import slick carousel styles
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "animate.css/animate.min.css";
-import Project2 from "./Project2";
-import Project3 from "./Project3";
-import Project4 from "./Project4";
+import youtubeImage from "../assets/stack overflow/youtube1.png";
+import stackoverflow from "../assets/stack overflow/stack1.png";
+import goldengate from "../assets/stack overflow/golden1.png";
+import notes from "../assets/stack overflow/note1.png";
 
 const Project = () => {
-  const carouselSettings = {
-    dots: true,
-    infinite: true,
-    speed: 100,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <>
-      <Navbar />
-      <br />
-      <h2 className="text-5xl font-bold px-4 md:px-0 text-center text-blue-600 animate__animated animate__fadeIn">
-        Projects
-      </h2>
-      <br />
-      <br />
-      <div className="container mx-auto p-4 lg:flex lg:gap-8">
-        {/* Left side - Project Details */}
-        <div className="lg:w-1/2 mt-4 lg:mt-0 animate__animated animate__fadeInUp">
-          <h2 className="text-3xl font-bold text-blue-600 text-center">
-            YouTube Clone
+      <div
+        id="project"
+        className="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white"
+      >
+        {/* Themes: blue, purple and teal */}
+        <div data-theme="teal" className="mx-auto max-w-6xl">
+          <h2 className="text-5xl font-bold px-4 md:px-0 text-center text-blue-600 animate__animated animate__fadeIn">
+            Projects
           </h2>
           <br />
-          <p className="text-gray-700 mb-4">
-            I developed a YouTube Clone project using the MERN stack. The
-            project replicates the core functionalities of YouTube, allowing
-            users to view, upload, and interact with videos.
-          </p>
-          <ul className="text-gray-700 mb-4 list-disc pl-6">
-            <li>Secure user login and registration. JWT for authentication.</li>
-            <li>
-              Seamless video upload and playback. Responsive design for various
-              devices.
-            </li>
-            <li>
-              Comment system for user interaction. Like/dislike functionality.
-            </li>
-          </ul>
-          <p className="text-gray-700 mb-4">
-            Technologies Used:
-            <br />
-            Frontend: JavaScript, React.js, Tailwind CSS
-            <br />
-            Backend: Node.js, Express.js, MongoDB
-            <br />
-            Additional: Cloudinary for video storage
-          </p>
-          <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
-            <a
-              href="https://beautiful-gumdrop-645ef4.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-blue-600 border border-blue-600"
-            >
-              See Live
-            </a>
-            <a
-              href="https://github.com/sanjaikannang/youtube-clone-FrontEnd.git"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-700 text-white px-4 py-2  transition duration-300 ease-in-out hover:bg-white hover:text-gray-900 border border-gray-900"
-            >
-              Source Code
-            </a>
-          </div>
-        </div>
-
-        {/* Right side - Image Carousel */}
-        <div className="lg:w-1/2 mt-8 lg:mt-0 animate__animated animate__fadeInRight">
+          <br />
+          {/* project 1 */}
+          <section className="font-sans text-black">
+            <div className="border border-blue-500 rounded-lg overflow-hidden">
+              <div className="flex lg:flex-row flex-col lg:items-center">
+                <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                  <div className="h-full">
+                    <article className="h-full">
+                      <div className="h-full flex items-center justify-center">
+                        <div
+                          className="w-733 h-612"
+                          style={{ maxWidth: "533px", maxHeight: "512px" }}
+                        >
+                          <img
+                            className="h-full w-full object-cover"
+                            src={youtubeImage}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div className="p-4 bg-gray-100 font-semibold">
+                  <div className="leading-relaxed">
+                    <h2 className="leading-tight text-3xl font-bold text-blue-700">
+                      YouTube Clone
+                    </h2>
+                    <br />
+                    <p className="text-gray-700 mb-4">
+                      I developed a YouTube Clone project using the MERN stack.
+                      The project replicates the core functionalities of
+                      YouTube, allowing users to view, upload, and interact with
+                      videos.
+                    </p>
+                    <p className="text-gray-700 mb-4">
+                      Technologies Used :
+                      <br />
+                      Frontend : JavaScript, React.js, Tailwind CSS
+                      <br />
+                      Backend : Node.js, Express.js, MongoDB
+                      <br />
+                      Additional : Cloudinary for video storage
+                    </p>
+                    <br />
+                    <div className="flex justify-between">
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/youtube-clone-FrontEnd.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/361181/github.svg"
+                          alt="Frontend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Frontend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/YouTube-Clone-BackEnd.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715 "
+                          alt="Backend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Backend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://beautiful-gumdrop-645ef4.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/457005/arrow-up-from-square.svg"
+                          alt="View Project"
+                          className="w-6 h-6 mr-2"
+                        />
+                        LiveSite
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <br />
           <br />
-          <Slider {...carouselSettings}>
-            <div>
-              <img
-                src={stackOverflowImage1}
-                alt="Project Image 1"
-                className="w-full h-auto"
-              />
+          <br />
+          <br />
+          {/* project 2 */}
+          <section className="font-sans text-black">
+            <div className="border border-blue-500 rounded-lg overflow-hidden">
+              <div className="flex lg:flex-row flex-col lg:items-center">
+                <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                  <div className="h-full">
+                    <article className="h-full">
+                      <div className="h-full flex items-center justify-center">
+                        <div
+                          className="w-733 h-612"
+                          style={{ maxWidth: "533px", maxHeight: "512px" }}
+                        >
+                          <img
+                            className="h-full w-full object-cover"
+                            src={stackoverflow}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div className="p-4 bg-gray-100 font-semibold">
+                  <div className="leading-relaxed">
+                    <h2 className="leading-tight text-3xl font-bold text-blue-700">
+                      StackOverFlow Clone
+                    </h2>
+                    <br />
+                    <p className="text-gray-700 mb-4">
+                      Created a Stack Overflow Clone using the MERN stack,
+                      providing a platform for users to ask, answer, and engage
+                      in discussions around programming and technical topics.
+                    </p>
+                    <p className="text-gray-700 mb-4">
+                      Technologies Used:
+                      <br />
+                      Frontend: JavaScript, React.js, Tailwind CSS
+                      <br />
+                      Backend: Node.js, Express.js, MongoDB
+                    </p>
+                    <br />
+                    <div className="flex justify-between">
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/StackOverFlow-FrontEnd.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/361181/github.svg"
+                          alt="Frontend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Frontend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/StackOverFlow-Clone-BackEnd.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715 "
+                          alt="Backend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Backend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href=" https://tangerine-smakager-a47add.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/457005/arrow-up-from-square.svg"
+                          alt="View Project"
+                          className="w-6 h-6 mr-2"
+                        />
+                        LiveSite
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <img
-                src={stackOverflowImage2}
-                alt="Project Image 2"
-                className="w-full h-auto"
-              />
+          </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          {/* project 3 */}
+          <section className="font-sans text-black">
+            <div className="border border-blue-500 rounded-lg overflow-hidden">
+              <div className="flex lg:flex-row flex-col lg:items-center">
+                <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                  <div className="h-full">
+                    <article className="h-full">
+                      <div className="h-full flex items-center justify-center">
+                        <div
+                          className="w-733 h-612"
+                          style={{ maxWidth: "533px", maxHeight: "512px" }}
+                        >
+                          <img
+                            className="h-full w-full object-cover"
+                            src={goldengate}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div className="p-4 bg-gray-100 font-semibold">
+                  <div className="leading-relaxed">
+                    <h2 className="leading-tight text-3xl font-bold text-blue-700">
+                      Golden Gate - Real Estate Application
+                    </h2>
+                    <br />
+                    <p className="text-gray-700 mb-4">
+                      Developed a comprehensive real estate application named
+                      Golden Gate using the MERN stack. The application provides
+                      users with a seamless experience for exploring, buying,
+                      and selling properties in the real estate market.
+                    </p>
+                    <p className="text-gray-700 mb-4">
+                      Technologies Used :
+                      <br />
+                      Frontend : JavaScript, React.js, Tailwind CSS
+                      <br />
+                      Backend : Node.js, Express.js, MongoDB
+                      <br />
+                      Additional : Cloudinary for image storage
+                    </p>
+                    <br />
+                    <div className="flex justify-between">
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/Golden-Gate-FrontEnd.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/361181/github.svg"
+                          alt="Frontend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Frontend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/Golden-Gate-BackEnd.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715 "
+                          alt="Backend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Backend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://dapper-tartufo-1bfe71.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/457005/arrow-up-from-square.svg"
+                          alt="View Project"
+                          className="w-6 h-6 mr-2"
+                        />
+                        LiveSite
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <img
-                src={stackOverflowImage3}
-                alt="Project Image 3"
-                className="w-full h-auto"
-              />
+          </section>
+          <br />
+          <br />
+          <br />
+          <br />
+          {/* project 4 */}
+          <section className="font-sans text-black">
+            <div className="border border-blue-500 rounded-lg overflow-hidden">
+              <div className="flex lg:flex-row flex-col lg:items-center">
+                <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                  <div className="h-full">
+                    <article className="h-full">
+                      <div className="h-full flex items-center justify-center">
+                        <div
+                          className="w-733 h-612"
+                          style={{ maxWidth: "533px", maxHeight: "512px" }}
+                        >
+                          <img
+                            className="h-full w-full object-cover"
+                            src={notes}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div className="p-4 bg-gray-100 font-semibold">
+                  <div className="leading-relaxed">
+                    <h2 className="leading-tight text-3xl font-bold text-blue-700">
+                      NoteWind - Note-Making Application
+                    </h2>
+                    <br />
+                    <p className="text-gray-700 mb-4">
+                      Designed and implemented NoteWind, a powerful note-making
+                      application, utilizing the MERN stack. NoteWind provides
+                      users with a streamlined platform for creating,
+                      organizing, and managing their notes efficiently.
+                    </p>
+                    <p className="text-gray-700 mb-4">
+                      Technologies Used:
+                      <br />
+                      Frontend: JavaScript, React.js, Tailwind CSS
+                      <br />
+                      Backend: Node.js, Express.js, MongoDB
+                    </p>
+                    <br />
+                    <div className="flex justify-between">
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/NoteWind-Frontend.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/361181/github.svg"
+                          alt="Frontend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Frontend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://github.com/sanjaikannang/backend.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png?20180806170715 "
+                          alt="Backend"
+                          className="w-6 h-6 mr-2"
+                        />
+                        Backend
+                      </a>
+                      <a
+                        className="mt-4 button button--secondary text-gray-700 flex items-center px-4 py-2"
+                        href="https://shimmering-cobbler-b07423.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://www.svgrepo.com/show/457005/arrow-up-from-square.svg"
+                          alt="View Project"
+                          className="w-6 h-6 mr-2"
+                        />
+                        LiveSite
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </Slider>
+          </section>
         </div>
+        <br />
+        <br />
+        <h2 className="text-2xl font-bold px-0 text-center text-blue-600 ">
+          - Student Management System -
+          <br /> - Note App with Email Remainder -
+          <br /> - Cross Platform Application Launcher -
+          <br />
+          <br /> And Many More..
+        </h2>
+        <br />
       </div>
-      <br />
-      <Project2 />
-      <br />
-      <Project3 />
-      <br />
-      <Project4 />
-      <br />
-      <h2 className="text-xl font-bold px-4 md:px-0 text-center text-blue-600 animate__animated animate__fadeIn">
-        And Many more...
-      </h2>
-      <br />
-      <br />
     </>
   );
 };

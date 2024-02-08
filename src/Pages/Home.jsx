@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { contactLinks } from "../constants";
 import programmingGif from "../assets/Programming.gif";
 import Navbar from "./Navbar";
+import About from "./About";
+import Project from "./Project";
+import Contact from "./Contact";
 
 const Home = () => {
   const [animateLeft, setAnimateLeft] = useState(false);
@@ -30,7 +33,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-white bg-center min-h-screen flex items-center justify-center">
+      <div
+        id="home"
+        className="bg-white bg-center min-h-screen flex items-center justify-center"
+      >
         <main className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen">
           <div
             className="sm:text-center lg:text-left md:w-1/2"
@@ -84,6 +90,9 @@ const Home = () => {
           />
         </main>
       </div>
+      <About />
+      <Project />
+      <Contact />
     </>
   );
 };

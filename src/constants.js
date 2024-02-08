@@ -13,7 +13,7 @@ export const techStack = {
     { name: "Express.js", link: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/express-js-icon.svg" },
   ],
   Database: [
-    { name: "MySQL", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" },
+    { name: "MySQL", link: "https://raw.githubusercontent.com/docker-library/docs/c408469abbac35ad1e4a50a6618836420eb9502e/mysql/logo.png" },
     { name: "MongoDB", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" },
   ],
   Tools: [
