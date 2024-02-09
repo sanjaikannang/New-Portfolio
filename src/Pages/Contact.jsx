@@ -22,7 +22,7 @@ const Contact = () => {
       <ul className="flex justify-center mt-5 space-x-5">
         <li>
           <a
-            href="mailto:sanjaikannang@email.com"
+            href="mailto:sanjaikannang@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
