@@ -326,7 +326,7 @@ const Project = () => {
                     </h2>
                     <br />
                     <p className="text-gray-700 mb-4">
-                      Designed and implemented NoteWind, a powerful note-making
+                      Designed and implemented NoteWind, a powerful Note-Making
                       application, utilizing the MERN stack. NoteWind provides
                       users with a streamlined platform for creating,
                       organizing, and managing their notes efficiently.
