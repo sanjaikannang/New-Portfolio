@@ -19,9 +19,12 @@ const About = () => {
               A bit about me
             </h4>
             <p>
-              A self-motivated, adaptable individual with a passion for
-              continuous learning. I am eager to contribute my technical skills
-              and passion for coding to a dynamic development team.
+              Recent Information Technology graduate with expertise in both
+              front-end and back-end development. Skilled in HTML5/CSS3,
+              JavaScript, React.js, Node.js, Express.js, MySQL, and MongoDB.
+              Dedicated to delivering top-notch solutions while continuously
+              enhancing skills through ongoing learning and professional
+              development initiatives.
             </p>
           </div>
 
@@ -37,7 +40,7 @@ const About = () => {
                 PSG College Of Arts & Science, Bharathiar University
               </h5>
               <p className="text-xl text-gray-700">
-                Passed Out Year: 2023 | CGPA: 7.4
+                Year: 2020 - 2023 | CGPA: 7.4
               </p>
             </div>
 
@@ -47,9 +50,11 @@ const About = () => {
                   Certification
                 </h4>
                 <p className="text-xl text-gray-700">
-                  Full Stack Developer - MERN
+                  Zen Class Full Stack Developer Program - MERN
                 </p>
-                <h5 className="text-xl text-gray-800">Guvi, IITM - Chennai</h5>
+                <h5 className="text-xl text-gray-800">
+                  GUVI Geek Network, IITM - Chennai.
+                </h5>
                 <p className="text-xl text-gray-700">June 2023 – August 2023</p>
               </div>
             </div>

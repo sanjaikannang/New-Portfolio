@@ -71,12 +71,12 @@ const Home = () => {
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-full md:w-auto">
                 <a
-                  href="https://drive.google.com/file/d/1IfaT27rfB3DYVBfIBQ3jqjTa3HyWXKfv/view?usp=sharing"
+                  href="https://drive.google.com/file/d/12n6--AQ_d2gBtLLCpu2VghKcmujHVWAR/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-400 md:py-4 md:text-lg md:px-10"
                 >
-                  Resume
+                  Download Resume
                 </a>
               </div>
             </div>

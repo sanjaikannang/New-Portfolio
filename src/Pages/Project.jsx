@@ -43,15 +43,28 @@ const Project = () => {
                 <div className="p-4 bg-gray-100 font-semibold">
                   <div className="leading-relaxed">
                     <h2 className="leading-tight text-3xl font-bold text-blue-700">
-                      YouTube Clone
+                      YouTube Clone Using MERN
                     </h2>
                     <br />
-                    <p className="text-gray-700 mb-4">
-                      I developed a YouTube Clone project using the MERN stack.
-                      The project replicates the core functionalities of
-                      YouTube, allowing users to view, upload, and interact with
-                      videos.
-                    </p>
+                    <div className="text-gray-700 mb-4">
+                      <ul className="list-disc ml-4">
+                        <li>
+                          The YouTube Clone is to replicate the core
+                          functionalities of the YouTube.
+                        </li>
+                        <li>
+                          Developed full-stack application for users to view,
+                          upload, and interact with videos, using React.js,
+                          Node.js, Express.js, MongoDB for Database Management &
+                          Cloudinary for image, Video Storage.
+                        </li>
+                        <li>
+                          Learned building scalable web applications and
+                          understand how to handle media content in a web
+                          environment.
+                        </li>
+                      </ul>
+                    </div>
                     <p className="text-gray-700 mb-4">
                       Technologies Used :
                       <br />
@@ -137,14 +150,26 @@ const Project = () => {
                 <div className="p-4 bg-gray-100 font-semibold">
                   <div className="leading-relaxed">
                     <h2 className="leading-tight text-3xl font-bold text-blue-700">
-                      StackOverFlow Clone
+                      Stack Over Flow Clone using MERN
                     </h2>
                     <br />
-                    <p className="text-gray-700 mb-4">
-                      Created a Stack Overflow Clone using the MERN stack,
-                      providing a platform for users to ask, answer, and engage
-                      in discussions around programming and technical topics.
-                    </p>
+                    <div className="text-gray-700 mb-4">
+                      <ul className="list-disc ml-4">
+                        <li>
+                          The Stack Overflow Clone provide robust platform for
+                          programming-related discussions and knowledge sharing.
+                        </li>
+                        <li>
+                          Built a full-stack application enabling users to ask
+                          questions, provide answers Using React.js
+                          ,Node.js,Express.js & MongoDB.
+                        </li>
+                        <li>
+                          Mastered building complex web applications and Learned
+                          implementing user authentication.
+                        </li>
+                      </ul>
+                    </div>
                     <p className="text-gray-700 mb-4">
                       Technologies Used:
                       <br />
@@ -231,12 +256,25 @@ const Project = () => {
                       Golden Gate - Real Estate Application
                     </h2>
                     <br />
-                    <p className="text-gray-700 mb-4">
-                      Developed a comprehensive real estate application named
-                      Golden Gate using the MERN stack. The application provides
-                      users with a seamless experience for exploring, buying,
-                      and selling properties in the real estate market.
-                    </p>
+                    <div className="text-gray-700 mb-4">
+                      <ul className="list-disc ml-4">
+                        <li>
+                          The Golden Gate Real Estate fulfills the need for a
+                          platform enabling property exploration, buying, and
+                          selling.
+                        </li>
+                        <li>
+                          Developed a web application for effortless property
+                          exploration, purchase, and listing in the real estate
+                          market.
+                        </li>
+                        <li>
+                          Gained practical experience in building complex
+                          applications and integrating third-party services like
+                          Cloudinary.
+                        </li>
+                      </ul>
+                    </div>
                     <p className="text-gray-700 mb-4">
                       Technologies Used :
                       <br />
@@ -325,12 +363,24 @@ const Project = () => {
                       NoteWind - Note-Making Application
                     </h2>
                     <br />
-                    <p className="text-gray-700 mb-4">
-                      Designed and implemented NoteWind, a powerful Note-Making
-                      application, utilizing the MERN stack. NoteWind provides
-                      users with a streamlined platform for creating,
-                      organizing, and managing their notes efficiently.
-                    </p>
+                    <div className="text-gray-700 mb-4">
+                      <ul className="list-disc ml-4">
+                        <li>
+                          I have Created Note Wind to offer users an intuitive
+                          platform for efficient note creation, organization,
+                          and management.
+                        </li>
+                        <li>
+                          Developed Note Wind, a note-making application.
+                          Seamlessly enables users to create, organize, and
+                          manage notes.
+                        </li>
+                        <li>
+                          Proficiency in designing and implementing complex web
+                          applications using the MERN stack.
+                        </li>
+                      </ul>
+                    </div>
                     <p className="text-gray-700 mb-4">
                       Technologies Used:
                       <br />
